@@ -1,7 +1,9 @@
 body{
-    background-color: #242424;
+    background-color: #040405ea;
     color: white;
     font-family: sans-serif;
+    padding: 0;
+    margin: 0;
 }
 .description{
     padding: 20px;
@@ -9,7 +11,7 @@ body{
     grid-template-columns: 4fr 1fr;
     column-gap: 1.5rem;
 }
-img{
+.description img{
     height: auto;
     width: 100%;
     max-width: fit-content;
@@ -32,6 +34,7 @@ img{
 .info h3{
     color: #ec3655;
     font-size: large;
+    text-transform: uppercase;
     font-family: sans-serif;
     font-weight: bolder;
     line-height: 25px;
@@ -55,7 +58,165 @@ img{
     bottom: -45vh;
  }
  /* --------------------------------------------------------- */
- .even{
-    height: 10rem;
-    border-radius: 2px;
+ .part2{
+  padding: 50px 2.5vw 0px 2.5vw !important;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+
  }
+
+ div.gallery {
+    border: none;
+    position: relative;
+  }
+  
+  div.gallery:hover {
+    border: none;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+  }
+  .desc p{
+    font-weight: bolder;
+    font-size: 11px;
+    display: inline-block;
+    margin: 0px 0px 0.35rem 4px;
+    text-transform: uppercase;
+    padding: auto;
+  }
+  .desc{
+    position: absolute;
+    bottom: -5px;
+    display: flex;
+    align-items:center;
+    width: 100%;
+    margin-bottom: 5px;
+     background: linear-gradient(to top,#28282800,#0000006f,#0000006f,transparent);
+  }
+
+  
+  * {
+    box-sizing: border-box;
+  }
+  .odd{
+  height:22rem !important;
+  width: auto;
+  }
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+   
+  }
+  .desc img{
+    height: 35px !important;
+    width: auto !important;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+    .odd{
+        margin-top: 5% !important;
+        height: auto !important;
+        width: 450px !important;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* -------------------------------------------------------------- */
+  .more h1{
+    line-height: 30px;
+    font-size: 1.576rem;
+
+  }
+  .more{
+    height:22rem !important;
+    width: 100%;  
+    margin-bottom: 1.6%;
+  }
+  .more button{
+    margin-top: 5%;
+    background-color: #282828;
+    color: #ffff;
+    border: none;
+    font-size: 0.875rem;
+    font-weight: bolder;
+    height: 40px;
+    text-transform: uppercase;
+    width: 250px;
+    padding: .625rem .75rem;
+    border-radius: 5px;
+    cursor:pointer ;
+    transition: 0.01s;
+  }
+  .more button:hover{
+    background-color: #323030;
+  }
+  /* ------------------------------------------------------------ */
+  .logoChannel{
+    padding: 50px 2.5vw 0px 2.5vw !important;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  }
+  .logoChannel h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  .logoChannel p{
+    color: #c5c5c5;
+    font-weight: bolder;
+  }
+  .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  .header span{
+    font-size: 2.8rem;
+  }
+  .header button{
+    border: none;
+    background-color: transparent;
+    color: #ec3655;
+    font-size: larger;
+    font-weight: bolder;
+    margin-top: auto;
+  }
+  .logoChannel button{
+    background: transparent;
+    border: none;
+  }
+  .logoChannel ol{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-left: -3%;
+  }
+  .logoChannel ol li img{
+    height: 100px;
+    width: auto;
+    background-color: #242424;
+    
+  }
+  
